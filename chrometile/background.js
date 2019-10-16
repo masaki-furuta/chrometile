@@ -331,9 +331,9 @@ getSettings({"enabled": isChromeBook()}).then(settings => {
             getDisplays().then(tileWindows, reason => console.error(reason));
         })
     
-        chrome.windows.onCreated.addListener(tileWindows);
-        chrome.windows.onRemoved.addListener(tileWindows);
-        chrome.windows.onFocusChanged.addListener(tileWindows);
+        // chrome.windows.onCreated.addListener(tileWindows);
+        // chrome.windows.onRemoved.addListener(tileWindows);
+        // chrome.windows.onFocusChanged.addListener(tileWindows);
     
         chrome.commands.onCommand.addListener(function(command) {
             console.log(command);
