@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Tiling Window Manager for Chrome OS™",
-  "short_name": "",
+  "short_name": "chrometile",
   "description": "Tiling Window Manager for Chrome OS™",
   "version": "0.4",
   "icons": {"128": "icon.png"},
