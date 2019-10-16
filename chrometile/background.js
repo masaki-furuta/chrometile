@@ -202,7 +202,7 @@ function tileDisplayWindows(display, margin) {
 
 function tileWindows() {
     return new Promise((resolve, reject) => {
-        getSettings({'margin': 2}).then(settings => {
+        getSettings({'margin': 0}).then(settings => {
             let margin = parseInt(settings.margin);
             Promise.all(
                  allDisplays.map(display => { tileDisplayWindows(display, margin) })
