@@ -28,7 +28,7 @@ function setUpEnabled(def) {
 
 function setUpOptions() {
     let $margin = document.getElementById('margin');
-    chrome.storage.local.get({"margin": 2}, settings => {
+    chrome.storage.local.get({"margin": 0}, settings => {
         $margin.value = settings.margin;
     });
     $margin.addEventListener('change', ()=> {
